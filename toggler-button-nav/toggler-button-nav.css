@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header a{
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+}
+#header-main{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px ;
+}
+#header-main nav ul li{
+    display: inline;
+}
+#header-main nav ul li a{
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    transition: all 1s;
+}
+#header-main nav ul li a:hover{
+    transition: all 1s;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: yellow;
+}
+
+
+#header-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(0, 0, 0, 0.822);
+}
+#header-nav nav ul{
+    list-style-type: none;
+    
+    width: 80vw;
+}
+#header-nav nav ul li{
+    margin: 20px 0;
+    
+    background-color: rgba(0, 0, 0, 0.2);
+    
+    width:80vw;
+    
+    border-radius: 10px;
+}
+#header-nav nav ul li a{
+    padding: 5px 0;
+    
+    display: inline-block;
+    
+    text-align: center;
+    
+    width: 80vw;
+    
+    color: #f8f8f8;
+
+    border-radius: 10px;
+}
+#header-nav nav ul li:hover a{
+    transition: all 1s;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: yellow;
+}
+
+#header-nav.sumir{
+    transition: all 1s;
+    display: none;
+}
+
+
+
+
+header div .logo{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+header div .logo span{
+    color: cadetblue;
+    font-size: 35px;
+}
+
+.toogler-button{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    display: none;
+    
+    transition: all 1s;
+}
+.toogler-button div{
+    border-radius: 50px;
+    width: 50px;
+    height: 5px;
+    background-color: #f8f8f8;
+    margin:8px 5px;
+}
+.toogler-button:hover{
+    transform: rotate(180deg);
+    background-color: rgba(0, 0, 0, 0.822);
+}
+.toogler-button2 img{
+    width: 30px;
+    height: 30px;
+}
+.toogler-button2 img:hover{
+    transition: all 1s;
+    transform: scale(1.2);
+}
+.toogler-button.sumir,
+.toogler-button2.sumir{
+    transition: all 1s;
+    display: none;
+}
+
+
+
+@media all and (max-width:650px){
+    #header-main nav{
+        display: none;
+    }
+    .toogler-button{
+        display: block;
+    }
+
+}
